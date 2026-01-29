@@ -5,13 +5,8 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'rm -rf terraform-aws-infra ansible-configs || true'
-
-        script {
-          def parts = env.GIT_URL.tokenize('/')
-          def ghUser = parts[3]
-          sh "git clone https://github.com/${ghUser}/terraform-aws-infra.git"
-          sh "git clone https://github.com/${ghUser}/ansible-configs.git"
-        }
+        sh 'git clone https://github.com/Pujitha-Reddy/terraform-aws-infra.git'
+        sh 'git clone https://github.com/Pujitha-Reddy/ansible-configs.git'
       }
     }
 
