@@ -16,7 +16,7 @@ infrastructure provisioning and configuration workflows.
 - `screenshots/` – Evidence of successful pipeline execution
 
 ## Evidence
-Screenshots below demonstrate successful pipeline execution.
+Screenshots demonstrate successful pipeline execution.
 
 ## Notes
 This pipeline is designed to run locally using Docker and LocalStack to avoid
